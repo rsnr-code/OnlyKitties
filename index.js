@@ -15,6 +15,9 @@ connectDB();
 //Using EJS for views
 app.set("view engine", "ejs");
 
+//Static Folder
+app.use(express.static("public"));
+
 //Logging
 app.use(logger("dev"));
 
