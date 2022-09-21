@@ -10,12 +10,30 @@
     <link rel="stylesheet" href="/css/bootstrap" />
   </head>
   <body>
-    <header class="container">
-      <div class="text-center">
-        <h1 class=""><a href="/profile">OnlyKitties</a></h1>
-        <span>Hope you brought some treats!</span>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+          <a href="#" class="navbar-brand">OnlyKitties</a>
+          <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="#learn" class="nav-link">Feed</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#questions" class="nav-link">Userpage</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#instructors" class="nav-link">Instructors</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </header>
+  </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
