@@ -8,8 +8,9 @@ const passport = require('passport');
 const session = require('express-session');
 const MongoStore = require("connect-mongo");
 
-const mainRoutes = require('./routes/main')
+const mainRoutes = require('./routes/main');
 const authRoutes = require('./routes/auth');
+const postRoutes = require("./routes/posts");
 
 // use .env file in config folder
 dotenv.config({path: './config/.env'});
@@ -46,6 +47,7 @@ app.use(logger("dev"));
 
 app.use('/', mainRoutes)
 app.use('/auth', authRoutes);
+
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}!`)
